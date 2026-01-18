@@ -107,3 +107,4 @@ resume-website/
 ## License
 
 MIT
+# Resume.ts
