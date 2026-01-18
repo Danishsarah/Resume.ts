@@ -1,76 +1,100 @@
+/**
+ * Personal information for the resume header
+ */
 export interface PersonalInfo {
-  name: string;
-  title: string;
-  email: string;
-  phone: string;
-  location: string;
-  website?: string;
-  linkedin?: string;
-  github?: string;
-  summary: string;
+  readonly name: string;
+  readonly title: string;
+  readonly email: string;
+  readonly phone: string;
+  readonly location: string;
+  readonly website?: string;
+  readonly linkedin?: string;
+  readonly github?: string;
+  readonly summary: string;
 }
 
+/**
+ * Work experience entry
+ */
 export interface Experience {
-  id: string;
-  company: string;
-  position: string;
-  location: string;
-  startDate: string;
-  endDate: string;
-  current: boolean;
-  description: string;
-  highlights: string[];
+  readonly id: string;
+  readonly company: string;
+  readonly position: string;
+  readonly location: string;
+  readonly startDate: string;
+  readonly endDate: string;
+  readonly current: boolean;
+  readonly description: string;
+  readonly highlights: readonly string[];
 }
 
+/**
+ * Education entry
+ */
 export interface Education {
-  id: string;
-  institution: string;
-  degree: string;
-  field: string;
-  location: string;
-  startDate: string;
-  endDate: string;
-  gpa?: string;
-  honors?: string[];
+  readonly id: string;
+  readonly institution: string;
+  readonly degree: string;
+  readonly field: string;
+  readonly location: string;
+  readonly startDate: string;
+  readonly endDate: string;
+  readonly gpa?: string;
+  readonly honors?: readonly string[];
 }
 
+/**
+ * Skill with proficiency level
+ */
 export interface Skill {
-  id: string;
-  name: string;
-  level: number; // 1-5
-  category: SkillCategory;
+  readonly id: string;
+  readonly name: string;
+  readonly level: number; // 1-5
+  readonly category: SkillCategory;
 }
 
+/**
+ * Available skill categories
+ */
 export type SkillCategory =
-  | "Programming Languages"
-  | "Frameworks & Libraries"
-  | "Tools & Technologies"
-  | "Soft Skills";
+  | 'Programming Languages'
+  | 'Frameworks & Libraries'
+  | 'Tools & Technologies'
+  | 'Soft Skills';
 
+/**
+ * Project showcase entry
+ */
 export interface Project {
-  id: string;
-  title: string;
-  description: string;
-  technologies: string[];
-  link?: string;
-  github?: string;
-  image?: string;
+  readonly id: string;
+  readonly title: string;
+  readonly description: string;
+  readonly technologies: readonly string[];
+  readonly link?: string;
+  readonly github?: string;
+  readonly image?: string;
 }
 
+/**
+ * Professional certificate or certification
+ */
 export interface Certificate {
-  id: string;
-  name: string;
-  issuer: string;
-  date: string;
-  credentialId?: string;
-  url?: string;
+  readonly id: string;
+  readonly name: string;
+  readonly issuer: string;
+  readonly date: string;
+  readonly credentialId?: string;
+  readonly url?: string;
 }
 
+/**
+ * Complete resume data structure
+ */
 export interface ResumeData {
-  personalInfo: PersonalInfo;
-  experience: Experience[];
-  education: Education[];
-  skills: Skill[];
-  projects: Project[];
-  certificates?: Certificate[];
+  readonly personalInfo: PersonalInfo;
+  readonly experience: readonly Experience[];
+  readonly education: readonly Education[];
+  readonly skills: readonly Skill[];
+  readonly projects: readonly Project[];
+  readonly certificates?: readonly Certificate[];
 }

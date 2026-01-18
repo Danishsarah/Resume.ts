@@ -1,16 +1,16 @@
-import React from "react";
-import { PersonalInfo } from "../types/resume.types";
+import React from 'react';
+import { PersonalInfo } from '../types/resume.types';
 import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
   FaLinkedin,
   FaGithub,
-  FaGlobe
-} from "react-icons/fa";
+  FaGlobe,
+} from 'react-icons/fa';
 
-interface HeaderProps {
-  personalInfo: PersonalInfo;
+export interface HeaderProps {
+  readonly personalInfo: PersonalInfo;
 }
 
 const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
@@ -25,11 +25,11 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
       <div className="section-container relative z-10">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="flex-shrink-0">
-            <div className="w-48 h-48 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center border-4 border-primary/30 shadow-2xl shadow-primary/20">
-              <span className="text-6xl font-bold text-white">
-                {personalInfo.name.split(" ").map(n => n[0]).join("")}
-              </span>
-            </div>
+            <img
+              src="/profile.jpeg"
+              alt={personalInfo.name}
+              className="w-48 h-48 rounded-2xl object-cover border-4 border-primary/30 shadow-2xl shadow-primary/20"
+            />
           </div>
 
           <div className="flex-1 text-center md:text-left">
@@ -48,9 +48,7 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
                 className="flex items-center gap-2 text-sm text-gray-300 hover:text-primary transition-colors"
               >
                 <FaEnvelope className="text-primary" />
-                <span>
-                  {personalInfo.email}
-                </span>
+                <span>{personalInfo.email}</span>
               </a>
 
               <a
@@ -58,21 +56,17 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
                 className="flex items-center gap-2 text-sm text-gray-300 hover:text-primary transition-colors"
               >
                 <FaPhone className="text-primary" />
-                <span>
-                  {personalInfo.phone}
-                </span>
+                <span>{personalInfo.phone}</span>
               </a>
 
               <div className="flex items-center gap-2 text-sm text-gray-300">
                 <FaMapMarkerAlt className="text-primary" />
-                <span>
-                  {personalInfo.location}
-                </span>
+                <span>{personalInfo.location}</span>
               </div>
             </div>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-3">
-              {personalInfo.linkedin &&
+              {personalInfo.linkedin && (
                 <a
                   href={personalInfo.linkedin}
                   target="_blank"
@@ -81,9 +75,10 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
                 >
                   <FaLinkedin className="text-primary group-hover:scale-110 transition-transform" />
                   <span className="text-sm">LinkedIn</span>
-                </a>}
+                </a>
+              )}
 
-              {personalInfo.github &&
+              {personalInfo.github && (
                 <a
                   href={personalInfo.github}
                   target="_blank"
@@ -92,9 +87,10 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
                 >
                   <FaGithub className="text-primary group-hover:scale-110 transition-transform" />
                   <span className="text-sm">GitHub</span>
-                </a>}
+                </a>
+              )}
 
-              {personalInfo.website &&
+              {personalInfo.website && (
                 <a
                   href={personalInfo.website}
                   target="_blank"
@@ -103,7 +99,8 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
                 >
                   <FaGlobe className="text-primary group-hover:scale-110 transition-transform" />
                   <span className="text-sm">Website</span>
-                </a>}
+                </a>
+              )}
             </div>
           </div>
         </div>

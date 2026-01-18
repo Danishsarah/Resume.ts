@@ -1,8 +1,7 @@
-import React from "react";
-import { PersonalInfo } from "../types/resume.types";
+import React from 'react';
 
-interface AboutProps {
-  summary: string;
+export interface AboutProps {
+  readonly summary: string;
 }
 
 const About: React.FC<AboutProps> = ({ summary }) => {
@@ -10,9 +9,7 @@ const About: React.FC<AboutProps> = ({ summary }) => {
     <section className="section-container bg-gray-900">
       <h2 className="section-title">About Me</h2>
       <div className="card p-8">
-        <p className="text-lg text-gray-300 leading-relaxed">
-          {summary}
-        </p>
+        <p className="text-lg text-gray-300 leading-relaxed">{summary}</p>
       </div>
     </section>
   );
