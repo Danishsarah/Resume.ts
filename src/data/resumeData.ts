@@ -22,7 +22,7 @@ export const resumeData: ResumeData = {
       company: 'Providence Vascular Institute',
       position: 'Registered Vascular Technologist',
       location: 'Spokane, WA',
-      startDate: '2018',
+      startDate: '2016',
       endDate: 'Present',
       current: true,
       description:
