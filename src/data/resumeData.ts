@@ -8,11 +8,11 @@ export const resumeData: ResumeData = {
   personalInfo: {
     name: 'Sarah Clay',
     title: 'Entry-Level/Junior Software Engineer',
-    email: 'clayrvt@gmail.com',
+    email: 'sarahclayrvt@gmail.com',
     phone: '(509) 499-7272',
     location: 'Cheney, WA',
-    linkedin: 'https://www.linkedin.com/in/s-rvt',
-    github: 'https://github.com/Danish-rvt',
+    linkedin: 'www.linkedin.com/in/sarah-clay-rvt',
+    github: 'https://github.com/Danishsarah',
     summary: `Entry-level/Junior Software Engineer with hands-on experience in software development and full-stack web applications using the MERN stack, React.js, Next.js, Node.js, and Express.js. Strong foundation in writing clean code and applying object-oriented programming principles, data structures, and algorithms to solve real-world problems efficiently. Proficient in JavaScript (ES6+), TypeScript, asynchronous programming, debugging, and identifying defects through effective error-handling techniques. Experienced in developing RESTful and GraphQL APIs, database management with MongoDB, MVC architecture, and secure coding practices. Familiar with version control tools including GitHub, participating in code reviews, and following Agile methodologies. Comfortable performing routine maintenance, ensuring code quality, and collaborating with cross-functional teams with strong communication skills.`,
   },
 
