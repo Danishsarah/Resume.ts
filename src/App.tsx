@@ -16,8 +16,8 @@ const App: React.FC = () => {
       <About summary={resumeData.personalInfo.summary} />
       <Projects projects={resumeData.projects} />
       <Skills skills={resumeData.skills} />
-      <Experience experiences={resumeData.experience} />
       <Education education={resumeData.education} />
+      <Experience experiences={resumeData.experience} />
       <Footer />
     </div>
   );
