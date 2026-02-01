@@ -9,7 +9,6 @@ export const resumeData: ResumeData = {
     name: 'Sarah Clay',
     title: 'Entry-Level/Junior Software Engineer',
     email: 'sarahclayrvt@gmail.com',
-    phone: '(509) 123-4567',
     location: 'Spokane/Cheney, WA',
     linkedin: 'https://www.linkedin.com/in/sarah-clay-rvt',
     github: 'https://github.com/Danishsarah',
