@@ -27,11 +27,21 @@ export const resumeData: ResumeData = {
     },
     {
       id: '2',
-      title: 'Personal Portfolio Website',
+      title: 'Space Travel',
       description:
-        'Full-stack personal portfolio website showcasing projects, resume, and professional work. Built with modern web technologies and responsive design.',
-      technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
-      github: 'https://github.com/Danish-rvt',
+        'Built a Space Travel single-page application using React (Vite) with modular CSS, component-driven architecture, client-side routing, and API/service abstraction. Implemented UI for planets, spacecraft, and construction flows; added comprehensive unit/integration tests with Jest and React Testing Library; configured mocks and test setup.',
+      technologies: [
+        'React',
+        'Vite',
+        'JavaScript',
+        'CSS Modules',
+        'Jest',
+        'React Testing Library',
+        'npm',
+        'ES modules',
+      ],
+      github: 'https://github.com/Danishsarah/space-travel',
+      link: 'https://space-travel-ivory.vercel.app/',
     },
   ],
   skills: [
