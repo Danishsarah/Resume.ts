@@ -37,9 +37,9 @@ const Header: React.FC<HeaderProps> = ({ personalInfo }) => {
               {personalInfo.name}
             </h1>
             <p className="text-xl md:text-2xl font-light mb-6 text-gray-300 font-mono">
-              <span className="text-primary">&lt;</span>
+              <span className="text-primary">{'<'}</span>
               {personalInfo.title}
-              <span className="text-primary">/&gt;</span>
+              <span className="text-primary">{'/>'}</span>
             </p>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">

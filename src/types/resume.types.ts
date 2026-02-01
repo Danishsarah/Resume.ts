@@ -14,35 +14,17 @@ export interface PersonalInfo {
 }
 
 /**
- * Work experience entry
+ * Project showcase entry
  */
-export interface Experience {
+export interface Project {
   readonly id: string;
-  readonly company: string;
-  readonly position: string;
-  readonly location: string;
-  readonly startDate: string;
-  readonly endDate: string;
-  readonly current: boolean;
+  readonly title: string;
   readonly description: string;
-  readonly highlights: readonly string[];
+  readonly technologies: readonly string[];
+  readonly link?: string;
+  readonly github?: string;
+  readonly image?: string;
 }
-
-/**
- * Education entry
- */
-export interface Education {
-  readonly id: string;
-  readonly institution: string;
-  readonly degree: string;
-  readonly field: string;
-  readonly location: string;
-  readonly startDate: string;
-  readonly endDate: string;
-  readonly gpa?: string;
-  readonly honors?: readonly string[];
-}
-
 /**
  * Skill with proficiency level
  */
@@ -62,17 +44,37 @@ export type SkillCategory =
   | 'Tools & Technologies'
   | 'Soft Skills';
 
+
 /**
- * Project showcase entry
+ * Education entry
  */
-export interface Project {
+export interface Education {
   readonly id: string;
-  readonly title: string;
+  readonly institution: string;
+  readonly degree: string;
+  readonly field: string;
+  readonly location: string;
+  readonly startDate: string;
+  readonly endDate: string;
+  readonly gpa?: string;
+  readonly honors?: readonly string[];
+}
+
+
+
+/**
+ * Work experience entry
+ */
+export interface Experience {
+  readonly id: string;
+  readonly company: string;
+  readonly position: string;
+  readonly location: string;
+  readonly startDate: string;
+  readonly endDate: string;
+  readonly current: boolean;
   readonly description: string;
-  readonly technologies: readonly string[];
-  readonly link?: string;
-  readonly github?: string;
-  readonly image?: string;
+  readonly highlights: readonly string[];
 }
 
 /**
@@ -98,3 +100,4 @@ export interface ResumeData {
   readonly projects: readonly Project[];
   readonly certificates?: readonly Certificate[];
 }
+

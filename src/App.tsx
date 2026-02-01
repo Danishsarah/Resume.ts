@@ -14,10 +14,10 @@ const App: React.FC = () => {
     <div className="min-h-screen">
       <Header personalInfo={resumeData.personalInfo} />
       <About summary={resumeData.personalInfo.summary} />
+      <Projects projects={resumeData.projects} />
+      <Skills skills={resumeData.skills} />
       <Experience experiences={resumeData.experience} />
       <Education education={resumeData.education} />
-      <Skills skills={resumeData.skills} />
-      <Projects projects={resumeData.projects} />
       <Footer />
     </div>
   );
