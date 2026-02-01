@@ -34,7 +34,7 @@ export const resumeData: ResumeData = {
         'React Testing Library',
       ],
       github: 'https://github.com/Danishsarah/final-capstone',
-      link: 'https://vercel.com/sarahs-projects-b14d5b16?repo=https://github.com/Danishsarah/final-capstone',
+      link: 'https://final-capstone-delta.vercel.app/',
     },
     {
       id: '2',
