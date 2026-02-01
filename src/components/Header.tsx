@@ -2,7 +2,6 @@ import React from 'react';
 import { PersonalInfo } from '../types/resume.types';
 import {
   FaEnvelope,
-  FaPhone,
   FaMapMarkerAlt,
   FaLinkedin,
   FaGithub,
