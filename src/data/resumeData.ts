@@ -92,6 +92,18 @@ export const resumeData: ResumeData = {
       level: 5,
       category: 'Frameworks & Libraries',
     },
+    {
+      id: '22',
+      name: 'React Router DOM',
+      level: 4,
+      category: 'Frameworks & Libraries',
+    },
+    {
+      id: '23',
+      name: 'React Testing Library',
+      level: 4,
+      category: 'Frameworks & Libraries',
+    },
     { id: '10', name: 'MongoDB', level: 4, category: 'Tools & Technologies' },
     {
       id: '11',
@@ -115,10 +127,46 @@ export const resumeData: ResumeData = {
     { id: '15', name: 'Jest', level: 3, category: 'Tools & Technologies' },
     { id: '16', name: 'Vite', level: 5, category: 'Tools & Technologies' },
     { id: '17', name: 'npm', level: 4, category: 'Tools & Technologies' },
+    {
+      id: '24',
+      name: 'ESLint',
+      level: 4,
+      category: 'Tools & Technologies',
+    },
+    {
+      id: '25',
+      name: 'Prettier',
+      level: 4,
+      category: 'Tools & Technologies',
+    },
+    {
+      id: '26',
+      name: 'Babel',
+      level: 3,
+      category: 'Tools & Technologies',
+    },
+    {
+      id: '27',
+      name: 'PostCSS',
+      level: 3,
+      category: 'Tools & Technologies',
+    },
+    {
+      id: '28',
+      name: 'CSS Modules',
+      level: 4,
+      category: 'Tools & Technologies',
+    },
     { id: '18', name: 'Problem Solving', level: 5, category: 'Soft Skills' },
     { id: '19', name: 'Team Collaboration', level: 5, category: 'Soft Skills' },
     { id: '20', name: 'Communication', level: 5, category: 'Soft Skills' },
     { id: '21', name: 'Agile/Scrum', level: 4, category: 'Soft Skills' },
+    {
+      id: '29',
+      name: 'AI-Assisted Development',
+      level: 4,
+      category: 'Soft Skills',
+    },
   ],
 
   education: [
